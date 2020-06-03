@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" >
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+	
+	<link rel="stylesheet" href="login.css">
+	<script src="libreria.js"></script>		
+	<script src="login.js"></script>
+	<style>
+		::-webkit-scrollbar { display: none; }
+	</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="width: 100%;">
+	<a style="margin-left:40.5%;width:250px; color:whitesmoke; font-weight: bold; font-family: 'Agency FB'; font-size: 20pt; text-align: center" title="Negozio Vendita Dischi - by Riccardo Marcarino">LOGIN</a>
+</nav>
+<div class="container-fluid" style="margin-top:50px">		
+	<!-- JUMBOTRON  -->
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4"> 
+			<div class="jumbotron text-center" data-toggle="collapse" data-target="#login">
+				<img src="img/logo.png" width="120" class="rounded-circle"> 
+				<h4 style="margin-top:10px">Accedi al tuo account</h4>
+			</div>
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+	<!-- FINE JUMBOTRON -->
+
+	
+	<div class="row collapse" id="login">   
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">	
+		
+			<form id="form1">
+				
+				<div class="form-group input-group">
+					<!-- input-group fa in modo che icona e inputBox
+						 vengano raggruppati sulla stessa riga -->
+					<span class="input-group-text">
+						<i class="fas fa-user"> </i>
+					</span>
+					<input type="text" class="form-control" id="usr" 
+					       placeholder="Username">
+				</div>
+				
+				<!-- password -->
+				<div class="form-group input-group">
+					<span class="input-group-text">
+						<i class="fas fa-lock"> </i>
+					</span>
+					<input type="password" class="form-control" id="pwd"
+   					       placeholder="Password">
+				</div>
+
+				
+				<!-- messaggio di errore -->
+				<div class="alert alert-danger alert-dismissible" id="lblError">			
+					<button type="button" class="close" >&times;</button>
+					<strong>Attenzione!</strong> Username o Password non validi
+				</div>
+
+
+				<!-- ***************************************** -->
+
+				<!-- pulsanti -->
+				<div class="form-group">
+					<!-- la classe form-control fa in modo che copra l'intera
+						 riga, altrimenti vengono visualizzati uno a fianco
+						 dell'altro. Equivalente a btn-block-->
+					<button type="button" class="btn btn-primary form-control"
+					        id="btnLogin">	LOGIN
+					</button>
+				</div>
+			</form>
+		</div>	
+		<div class="col-sm-4"></div>
+	</div> <!-- row -->
+	<div style="margin-top: 30px; border-top: 1px inset darkgray; height: 70px;" class="navbar navbar-expand-md bg-dark navbar-dark">
+		<img src="img/github.png" width="110px" height="40px" style="float: left; margin-top: 15px; padding-left: 20px">
+		<div style="margin-left: 65%; margin-top: 20px; padding-right: 20px">Help: <a href = "mailto: r.marcarino.0814@vallauri.edu" title="Riccardo Marcarino">r.marcarino.0814@vallauri.edu</a></div>
+	</div>
+	</div> <!-- container -->  
+</div>	
+</body>
+</html>

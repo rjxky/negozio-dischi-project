@@ -1,0 +1,28 @@
+.form-control{
+    margin-top: 50px;
+}
+
+body {
+    background-image: url("img/background.jpg");
+    background-color: #cccccc;
+}
+
+nav a{
+    font-family: "Agency FB", serif;
+}
+
+.tabella{
+    width: 80%;
+}
+
+tr,th{
+    padding: 20px;
+}
+
+td:not([class^="image"]){
+    line-height: 95px;
+}
+
+a{
+    cursor: pointer;
+}
